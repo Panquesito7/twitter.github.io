@@ -1,3 +1,8 @@
+/**
+ * Copyright 2018 Twitter, Inc.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 // Put custom repo GitHub URLs in this object, keyed by nameWithOwner repo name.
 var customGithubURL = {
     "twitter/pants": "https://github.com/pantsbuild/pants",
@@ -38,7 +43,7 @@ var renderProjects = function(projectsList, searchString="") {
             // Color-coded border
             var colorDiv = document.createElement('div')
             colorDiv.className = "border small-margin"
-            colorDiv.style = "border-bottom-color: " + project.color
+            colorDiv.style.borderBottomColor = project.color
             projectDiv.appendChild(colorDiv)
 
             // Project Description (HTML version)
